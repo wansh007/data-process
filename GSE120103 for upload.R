@@ -158,7 +158,7 @@ p <-ggplot(iso, aes(group,METTL3,fill=group)) +
   stat_compare_means(method = "t.test")
 print(p)
 
-#Figure S1
+#Figure S1A
 rm(list=ls())
 load(file='GSE120103_for_dif_expeSet.Rdata')
 #-----多组箱式图
