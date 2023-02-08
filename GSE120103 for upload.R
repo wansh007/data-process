@@ -1,10 +1,3 @@
-rm(list=ls())
-dirname(rstudioapi::getActiveDocumentContext()$path)            # Finds the directory where this script is located
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))     # Sets the working directory to where the script is located
-getwd()
-PrimaryDirectory <- getwd()
-PrimaryDirectory
-
 library(GEOquery)
 eSet <- getGEO("GSE120103",destdir = '.',getGPL = F) 
 Sys.setenv("VROOM_CONNECTION_SIZE"=99999999)
